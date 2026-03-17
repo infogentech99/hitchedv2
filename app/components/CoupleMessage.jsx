@@ -150,10 +150,10 @@ export default function CoupleMessage() {
           </div>
 
           <div className="flex flex-col justify-center items-center lg:mt-20 lg:ml-140 ml-34">
-            <h2 className="lg:text-5xl text-[22px] text-center text-[#FFF5B9] lg:pt-60 font-Cormorant-upright pt-4">
+            <h2 className="lg:text-5xl text-[22px] text-center text-[#FFF5B9] lg:pt-60 font-Cormorant-upright pt-4 md:leading-12 leading-6">
               Looking Forward to <br /> Seeing You
             </h2>
-            <div className="flex flex-col-1 gap-4 justify-center items-center md:not-first:mt-4 ">
+            <div className="flex flex-col-1 md:gap-4 gap-2 justify-center items-center md:not-first:mt-4 ">
               <a href="#" target="_blank">
                 <img src="/assets/whatsapp.png" alt="" className="lg:h-10 lg:w-10 h-6 w-6" />
               </a>
