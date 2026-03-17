@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 export default function CoupleMessage() {
   return (
     <>
-      <div className="md:bg-[url('/assets/couple_bgt_water.webp')] bg-[url('/assets/couple_bg_water.jpg')] bg-cover bg-no-repeat">
-        <div className="lg:h-850 md:h-350 h-680 pt-2">
+      <div className="md:bg-[url('/assets/couple_bgt_water_new.jpg')] bg-[url('/assets/couple_bg_water_new.jpg')] bg-cover bg-no-repeat">
+        <div className="lg:h-850 md:h-350 h-650 pt-2">
           <h1 className="lg:text-[40px] md:text-3xl text-[50px] text-center text-[#FFF5B9] lg:pt-62 pt-12 font-Cormorant-upright">
             A message from the couple
           </h1>
@@ -110,7 +110,7 @@ export default function CoupleMessage() {
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Weather
                 </h2>
-                <p className="text-[14px] text-[#FFF5B9] mt-1 font-cormorant">
+                <p className="md:text-[18px] text-[14px] text-[#FFF5B9] mt-1 font-cormorant md:leading-5">
                   It will be mostly cloudy with <br />
                   temperature reaching up <br />
                   to 22 degrees at the venue
@@ -120,12 +120,12 @@ export default function CoupleMessage() {
                 <img
                   src="/assets/drive_h.png"
                   alt="drive"
-                  className="lg:h-22 lg:w-22 h-32 w-32"
+                  className="lg:h-22 lg:w-22 h-32 w-29"
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Staff
                 </h2>
-                <p className="text-[14px] text-[#FFF5B9] mt-1 font-cormorant">
+                <p className="md:text-[18px] text-[14px] md:leading-5 text-[#FFF5B9] mt-1 font-cormorant">
                   We recommend the nearby <br />
                   lodge called VEGA near the <br />
                   venue for the staff members
@@ -140,7 +140,7 @@ export default function CoupleMessage() {
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Parking
                 </h2>
-                <p className="text-[14px] text-[#FFF5B9] mt-1 font-cormorant">
+                <p className="md:text-[18px] text-[14px] md:leading-5 text-[#FFF5B9] mt-1 font-cormorant">
                   Valet parking for all our <br />
                   guests will be available <br />
                   at the venue
@@ -149,15 +149,15 @@ export default function CoupleMessage() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center lg:mt-20 mt-1 lg:ml-80 ml-24">
-            <h2 className="lg:text-5xl text-2xl text-center text-[#FFF5B9] lg:pt-90 font-Cormorant-upright pt-40">
+          <div className="flex flex-col justify-center items-center lg:mt-20 lg:ml-140 ml-34">
+            <h2 className="lg:text-5xl text-[22px] text-center text-[#FFF5B9] lg:pt-60 font-Cormorant-upright pt-4">
               Looking Forward to <br /> Seeing You
             </h2>
-            <div className="flex flex-col-1 gap-4 justify-center items-center mt-4 ">
+            <div className="flex flex-col-1 gap-4 justify-center items-center md:not-first:mt-4 ">
               <a href="#" target="_blank">
-                <img src="/assets/whatsapp.png" alt="" className="lg:h-10 lg:w-10 h-8 w-8" />
+                <img src="/assets/whatsapp.png" alt="" className="lg:h-10 lg:w-10 h-6 w-6" />
               </a>
-              <h2 className="lg:text-3xl text-2xl text-center text-[#FFF5B9]  font-Cormorant-upright">
+              <h2 className="lg:text-3xl text-[18px] text-center text-[#FFF5B9]  font-Cormorant-upright">
                 Click the Link to RSVP
               </h2>
             </div>
