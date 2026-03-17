@@ -164,7 +164,7 @@ export default function Home() {
       <audio ref={audioRef} src="/assets/background_song.mp3" loop preload="auto" playsInline />
 
       <div className="
-    bg-[url('/assets/hitched_mobilebg_water.webp')]
+    bg-[url('/assets/hitched_mobilebg_water_n.jpg')]
     md:bg-[url('/assets/hitched_desktopbg_water.webp')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
 
@@ -342,7 +342,7 @@ export default function Home() {
                   <img
                     src={event.image}
                     alt={event.venue}
-                    className="lg:w-80 w-95 sm:w-76 h-auto"
+                    className="lg:w-80 w-60 sm:w-76  h-auto"
                   />
 
                   <h2 className="text-white font-Cormorant-upright lg:text-[45px] md:text-2xl text-[37px] mt-4 font-bold">
