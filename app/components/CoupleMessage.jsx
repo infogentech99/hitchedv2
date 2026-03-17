@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 export default function CoupleMessage() {
   return (
     <>
-      <div className="md:bg-[url('/assets/couple_bgt.png')] bg-[url('/assets/couple_bg_mt.png')] bg-cover bg-no-repeat">
+      <div className="md:bg-[url('/assets/couple_bgt_water.webp')] bg-[url('/assets/couple_bg_water.jpg')] bg-cover bg-no-repeat">
         <div className="lg:h-850 md:h-350 h-680 pt-2">
           <h1 className="lg:text-[40px] md:text-3xl text-[50px] text-center text-[#FFF5B9] lg:pt-62 pt-12 font-Cormorant-upright">
             A message from the couple

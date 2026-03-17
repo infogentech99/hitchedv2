@@ -36,7 +36,7 @@ export default function MarriageCountdown() {
 
     return (
         <>
-            <div className="bg-[url('/assets/countdown_bg.jpg')] bg-cover bg-no-repeat pb-12">
+            <div className="bg-[url('/assets/countdown_bg_water.jpg')] bg-cover bg-no-repeat pb-12">
                 <div className="lg:h-110 md:h-100 h-80">
                     <h2 className="lg:text-[40px] text-4xl text-center text-[#FFF5B9] lg:pt-42 pt-12 font-Cormorant-upright">The countdown begins</h2> 
                       <h2 className="lg:text-[40px] text-2xl text-center text-[#FFF5B9] font-Cormorant-upright"> {timeLeft.days}D {timeLeft.hours}H {timeLeft.minutes}M</h2>

@@ -164,8 +164,8 @@ export default function Home() {
       <audio ref={audioRef} src="/assets/background_song.mp3" loop preload="auto" playsInline />
 
       <div className="
-    bg-[url('/assets/hitched_mobilebg.webp')]
-    md:bg-[url('/assets/hitched_desktopbg.webp')]
+    bg-[url('/assets/hitched_mobilebg_water.webp')]
+    md:bg-[url('/assets/hitched_desktopbg_water.webp')]
     bg-cover bg-no-repeat bg-top md:bg-center w-full px-4 sm:px-8 overflow-hidden relative">
 
 
@@ -407,7 +407,7 @@ export default function Home() {
 
 
 
-      <div className="hidden md:block bg-[url('/assets/bride1.png')] bg-cover bg-no-repeat bg-center">
+      <div className="hidden md:block bg-[url('/assets/bride1_water.png')] bg-cover bg-no-repeat bg-center">
         <div className="lg:h-320 md:h-180 flex pt-80 justify-center">
           <img src="/assets/logo.png" alt="logo" className="w-32 h-48 md:w-40 lg:w-60" />
         </div>
@@ -415,7 +415,7 @@ export default function Home() {
 
 
       {/* mobile visible section */}
-      <div className="md:hidden bg-[url('/assets/bide_mobilet.jpg')] bg-cover bg-no-repeat">
+      <div className="md:hidden bg-[url('/assets/bide_mobile_water.jpg')] bg-cover bg-no-repeat">
         <div className="h-210 flex  justify-center pt-70">
           <img src="/assets/logo.png" alt="logo" className="w-32 h-28 md:w-40 lg:w-48" />
         </div>
