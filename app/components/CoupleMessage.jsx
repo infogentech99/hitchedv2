@@ -120,7 +120,7 @@ export default function CoupleMessage() {
                 <img
                   src="/assets/drive_h.png"
                   alt="drive"
-                  className="lg:h-22 lg:w-21 h-32 w-32"
+                  className="lg:h-22 lg:w-22 h-32 w-32"
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Staff
@@ -149,8 +149,8 @@ export default function CoupleMessage() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center lg:mt-20 mt-1 lg:ml-0 ml-24">
-            <h2 className="lg:text-5xl text-2xl text-center text-[#FFF5B9] lg:pt-72 font-Cormorant-upright pt-40">
+          <div className="flex flex-col justify-center items-center lg:mt-20 mt-1 lg:ml-80 ml-24">
+            <h2 className="lg:text-5xl text-2xl text-center text-[#FFF5B9] lg:pt-90 font-Cormorant-upright pt-40">
               Looking Forward to <br /> Seeing You
             </h2>
             <div className="flex flex-col-1 gap-4 justify-center items-center mt-4 ">
