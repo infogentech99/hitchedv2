@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 export default function CoupleMessage() {
   return (
     <>
-      <div className="md:bg-[url('/assets/couple_bgt_water_new.jpg')] bg-[url('/assets/couple_bg_water_new2.jpg')] bg-cover bg-no-repeat">
+      <div className="md:bg-[url('/assets/couple_bgt_water_new2.jpg')] bg-[url('/assets/couple_bg_water_new2.jpg')] bg-cover bg-no-repeat">
         <div className="lg:h-850 md:h-350 h-650 pt-2">
           <h1 className="lg:text-[40px] md:text-3xl text-[50px] text-center text-[#FFF5B9] lg:pt-62 pt-12 font-Cormorant-upright">
             A message from the couple
@@ -120,7 +120,7 @@ export default function CoupleMessage() {
                 <img
                   src="/assets/drive_h.png"
                   alt="drive"
-                  className="lg:h-22 lg:w-21 h-32 w-29"
+                  className="lg:h-23 lg:w-21 h-32 w-29"
                 />
                 <h2 className="lg:text-[32px] text-[50px] text-[#FFF5B9] mt-2 font-Cormorant-upright">
                   Staff
@@ -150,7 +150,7 @@ export default function CoupleMessage() {
           </div>
 
           <div className="flex flex-col justify-center items-center lg:mt-20 lg:ml-140 ml-34">
-            <h2 className="lg:text-5xl text-[22px] text-center text-[#FFF5B9] lg:pt-60 font-Cormorant-upright pt-4 md:leading-12 leading-6">
+            <h2 className="lg:text-5xl text-[22px] text-center text-[#FFF5B9] lg:pt-63 font-Cormorant-upright pt-4 md:leading-12 leading-6">
               Looking Forward to <br /> Seeing You
             </h2>
             <div className="flex flex-col-1 md:gap-4 gap-2 justify-center items-center md:not-first:mt-4 ">
