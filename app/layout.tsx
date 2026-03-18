@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "InviteArc",
     images: [
       {
-        url: "/og.jpg",
+        url: "/assets/og.jpg",
         width: 1200,
         height: 630,
         alt: "Dhiraj Weds Ritika - InviteArc",
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dhiraj Weds Ritika - InviteArc",
     description: "Premium wedding invitation templates by InviteArc",
-    images: ["/og.jpg"],
+    images: ["/assets/og.jpg"],
   },
 
  other: {
     "og:image:secure_url": "https://hitched-demo.vercel.app/og.jpg",
-    "og:image:type": "image/jpeg",
+    "og:image:type": "image/jpg",
   },
 
 
