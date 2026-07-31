@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -45,6 +46,11 @@ body {
 
 .font-cormorant-infant {
   font-family: 'Cormorant Infant', serif;
+}
+
+
+.font-eb-garamond{
+   font-family: "EB Garamond", serif;
 }
 
 .mySwiper {
@@ -92,90 +98,134 @@ body {
 }
 
 
-/* Base lamp */
-.floating-lamp {
-  position: absolute;
-  animation-name: lampFlow;
-  /* animation-duration: 2.5s; */
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  will-change: transform, opacity;
-  opacity: 0;
-}
-
 /*
   This creates:
   - left → right movement
   - slow vertical drift
   - curved / non-straight path illusion
 */
-@keyframes lampFlow {
-  0% {
-    transform: translateX(-30vw) translateY(40px) scale(var(--scale, 1));
-    opacity: 0;
+
+
+
+.floating-petal{
+  position:absolute;
+  animation-name: petalFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+  pointer-events:none;
+  opacity:0;
+}
+
+
+@keyframes petalFall{
+
+  0%{
+    transform: translateY(-10vh) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
+    opacity:0;
   }
 
-  10% {
-    opacity: 1;
+  10%{
+    opacity:1;
   }
 
-  25% {
-    transform: translateX(10vw) translateY(-20px) scale(var(--scale, 1));
+  20%{
+    transform: translateY(60vh) translateX(-15px) scale(var(--scale)) rotate(calc(var(--rotate) + 40deg));
   }
 
-  45% {
-    transform: translateX(35vw) translateY(30px) scale(var(--scale, 1));
+  40%{
+    transform: translateY(130vh) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 100deg));
   }
 
-  65% {
-    transform: translateX(60vw) translateY(-10px) scale(var(--scale, 1));
+  60%{
+    transform: translateY(180vh) translateX(-10px) scale(var(--scale)) rotate(calc(var(--rotate) + 160deg));
   }
 
-  85% {
-    opacity: 1;
+  80%{
+    transform: translateY(240vh) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 220deg));
   }
 
-  100% {
-    transform: translateX(110vw) translateY(20px) scale(var(--scale, 1));
-    opacity: 0;
+  100%{
+    transform: translateY(300vh) translateX(-5px) scale(var(--scale)) rotate(calc(var(--rotate) + 280deg));
+    opacity:0;
   }
 }
 
-/*
-  This creates:
-  - right → left movement
-  - slow vertical drift
-  - curved / non-straight path illusion
-*/
-@keyframes lampFlowReverse {
-  0% {
-    transform: translateX(130vw) translateY(40px) scale(var(--scale, 1));
-    opacity: 0;
+
+@media (max-width: 768px){
+@keyframes petalFall{
+
+  0%{
+    transform: translateY(-100px) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
+    opacity:0;
   }
 
-  10% {
-    opacity: 1;
+  10%{
+    opacity:1;
   }
 
-  25% {
-    transform: translateX(90vw) translateY(-20px) scale(var(--scale, 1));
+  25%{
+    transform: translateY(100px) translateX(-20px) scale(var(--scale)) rotate(calc(var(--rotate) + 60deg));
   }
 
-  45% {
-    transform: translateX(65vw) translateY(30px) scale(var(--scale, 1));
+  50%{
+    transform: translateY(230px) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 120deg));
   }
 
-  65% {
-    transform: translateX(40vw) translateY(-10px) scale(var(--scale, 1));
+  75%{
+    transform: translateY(370px) translateX(-15px) scale(var(--scale)) rotate(calc(var(--rotate) + 200deg));
   }
 
-  85% {
-    opacity: 1;
+  100%{
+    transform: translateY(500px) translateX(10px) scale(var(--scale)) rotate(calc(var(--rotate) + 260deg));
+    opacity:0;
   }
 
-  100% {
-    transform: translateX(-30vw) translateY(20px) scale(var(--scale, 1));
-    opacity: 0;
-  }
+
 }
+}
+
+
+
+/* Desktop (lg and above) */
+@media (min-width: 1024px) {
+  @keyframes petalFall{
+
+  0%{
+    transform: translateY(-20px) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
+    opacity:0;
+  }
+
+  10%{
+    opacity:1;
+  }
+
+  25%{
+    transform: translateY(1000px) translateX(-20px) scale(var(--scale)) rotate(calc(var(--rotate) + 60deg));
+    opacity:1;
+  }
+
+  50%{
+    transform: translateY(2000px) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 120deg));
+    opacity:1;
+  }
+
+  75%{
+    transform: translateY(3000px) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 200deg));
+    opacity:0.5;
+  }
+
+  100%{
+    transform: translateY(4000px) translateX(10px) scale(var(--scale)) rotate(calc(var(--rotate) + 260deg));
+    opacity:0;
+  }
+
+
+}
+}
+
+
+
+
+
 

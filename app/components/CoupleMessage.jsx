@@ -12,15 +12,11 @@ export default function CoupleMessage() {
     <>
       <div className="md:bg-[url('/assets/couple_bgt_water_new2.jpg')] bg-[url('/assets/couple_bg_water_new2.jpg')] bg-cover bg-no-repeat">
         <div className="lg:h-850 md:h-350 h-650 pt-2">
-          <h1 className="lg:text-[40px] md:text-3xl text-[50px] text-center text-[#FFF5B9] lg:pt-62 pt-12 font-Cormorant-upright">
-            A message from the couple
+          <h1 className="lg:text-[60px] md:text-3xl text-[30px] text-center text-[#FFF5B9] lg:pt-62 pt-12 font-eb-garamond uppercase">
+           Introducing
           </h1>
-          <h2 className="lg:text-[30px] text-[18px]  text-center text-[#FFF5B9] lg:px-60 px-6 lg:mt-28 mt-12 font-Cormorant-upright lg:leading-8 md:leading-8 leading-6">
-            From different traditions to one beautiful journey, join us as we
-            celebrate love, laughter, and forever. This moment wouldn’t be the
-            same without the people we love most. Thank you for your love,
-            blessings, and for making our journey even more special, we’re so
-            excited to celebrate together!
+          <h2 className="lg:text-[90px] md:text-[60px] text-[48px]  text-center text-[#FFF5B9] lg:px-60 px-6 lg:mt-28 mt-12 font-parisienne lg:leading-8 md:leading-8 leading-6">
+            The Couple
           </h2>
           <div className="w-full md:mt-32 mt-12">
             <Swiper
@@ -91,14 +87,10 @@ export default function CoupleMessage() {
             </Swiper>
           </div>
 
-          <h1 className=" lg:text-[100px] text-[60px] md:text-3xl text-center text-[#FFF5B9] lg:pt-32 pt-12 font-Cormorant-upright">
-            Things to <br /> know
+          <h1 className=" lg:text-[100px] text-[60px] md:text-3xl text-center text-[#FFF5B9] lg:pt-32 pt-12 font-parisienne">
+           A Guide for  <br /> Guests
           </h1>
-          <h2 className="lg:text-[30px] text-[18px] text-center text-[#FFF5B9] lg:pt-6 lg:px-60 px-6 lg:mt-4 mt-2 font-cormorant">
-            To help you feel at ease and enjoy every moment of the celebrations,
-            we’ve gathered a few thoughtful details we’d love for you to know
-            before the big day.
-          </h2>
+          
           <div className="flex justify-center mt-20 pb-24">
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 lg:gap-24 gap-10 sm:gap-16">
               <div className="flex flex-col items-center justify-center text-center">
@@ -148,7 +140,11 @@ export default function CoupleMessage() {
               </div>
             </div>
           </div>
-
+<h2 className="lg:text-[30px] text-[18px] text-center text-[#FFF5B9] lg:pt-6 lg:px-60 px-6 lg:mt-4 mt-2 font-cormorant">
+            To help you feel at ease and enjoy every moment of the celebrations,
+            we’ve gathered a few thoughtful details we’d love for you to know
+            before the big day.
+          </h2>
           <div className="flex flex-col justify-center items-center lg:mt-20 lg:ml-140 ml-34">
             <h2 className="lg:text-5xl text-[22px] text-center text-[#FFF5B9] lg:pt-63 font-Cormorant-upright pt-4 md:leading-12 leading-6">
               Looking Forward to <br /> Seeing You
