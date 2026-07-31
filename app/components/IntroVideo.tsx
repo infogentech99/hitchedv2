@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function IntroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -9,20 +9,12 @@ export default function IntroVideo() {
   const [hide, setHide] = useState(false);
   const [show, setShow] = useState(true);
 
-  // iPhone / iPad detect
-  const isIOS = useMemo(() => {
-    if (typeof navigator === "undefined") return false;
-
-    return /iPad|iPhone|iPod/.test(navigator.userAgent);
-  }, []);
-
-  // Video source
-  const videoSrc = isIOS
-    ? "/assets/curtain1.mp4"
-    : "/assets/curtain1.webm";
-
   useEffect(() => {
-    document.body.style.overflow = show ? "hidden" : "auto";
+    if (show) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
     return () => {
       document.body.style.overflow = "auto";
@@ -35,8 +27,8 @@ export default function IntroVideo() {
     try {
       setStarted(true);
       await videoRef.current.play();
-    } catch (err) {
-      console.error(err);
+    } catch (e) {
+      console.log(e);
     }
   };
 
@@ -45,14 +37,14 @@ export default function IntroVideo() {
 
     setTimeout(() => {
       setShow(false);
-    }, 300);
+    }, 700);
   };
 
   if (!show) return null;
 
   return (
     <div
-      className={`fixed inset-0 z-[999999] transition-opacity duration-300 ${
+      className={`fixed inset-0 z-[999999] transition-opacity duration-700 ${
         hide ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -60,21 +52,18 @@ export default function IntroVideo() {
         ref={videoRef}
         playsInline
         preload="auto"
-        muted={false}
         onEnded={handleEnd}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover"
       >
-        <source
-          src={videoSrc}
-          type={isIOS ? "video/mp4" : "video/webm"}
-        />
+        <source src="/assets/curtain1.webm" type="video/webm" />
       </video>
 
       {!started && (
         <button
           onClick={playVideo}
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-          w-24 h-24 rounded-full bg-white text-black text-4xl cursor-pointer"
+          w-24 h-24 rounded-full bg-white/90 backdrop-blur
+          text-black text-4xl hover:scale-110 transition cursor-pointer"
         >
           ▶
         </button>
